@@ -22,7 +22,7 @@ const styles = {
 
 export default function ContentContainer() {
     const [currentPage, setCurrentPage] = useState('About');
-    // create home/landing page and set as default state so its there on pageload
+    // create home/landing page and set as default state so its there on page load
 
     // logic that checks which state 'currentPage' is in (ie which page it is on) and renders the corresponding page
     const renderPage = () => {
@@ -35,8 +35,9 @@ export default function ContentContainer() {
           if (currentPage === 'Portfolio') {
             return <Portfolio />;
           }
-        // need to figure out how I want to link resume
-          return <Resume />;
+          if(currentPage === 'Resume') {
+            return <Portfolio />;
+          }
     };
 
     const handlePageChange = (page) => setCurrentPage(page);

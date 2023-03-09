@@ -2,10 +2,8 @@
   "name": "professional-portfolio",
   "version": "0.1.0",
   "private": false,
-  "main": "index.js",
-  "homepage": "https://chelsrunnn.github.io/professional-portfolio",
+  "homepage": "http://chelsrunnn.github.io/professional-portfolio",
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "@chakra-ui/react": "^1.8.9",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -13,11 +11,11 @@
     "@fontsource/la-belle-aurore": "^4.5.11",
     "@fontsource/playfair-display": "^4.5.13",
     "@fontsource/playfair-display-sc": "^4.5.11",
-    "framer-motion": "^4.1.17",
-    "gh-pages": "^5.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.3",
+    "framer-motion": "^4.1.17",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "5.0.1",
@@ -48,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
