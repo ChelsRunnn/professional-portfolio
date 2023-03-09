@@ -1,0 +1,184 @@
+/* theme colors & fonts */ 
+:root {
+  /* light colors */
+--col-bg-light: #cecece;
+--col-bg-cream: #f7eee9;
+--col-l-tan: #d3baa4;
+--col-tan: #BFA38A;
+--col-d-tan: #A69180;
+/* anchor colors */
+--col-orange: #A66E4E;
+--col-l-brown: #733C30;
+--col-brown: #40282C;
+--col-d-brown: #26170F;
+/* contrast colors */
+--col-blue: #A8BBBF;
+/* fonts */
+--ff-header: 'Diplomata SC', 'san serif';
+--ff-sub: 'La Belle Aurore', 'Playfair Display ital', 'serif';
+--ff-soft-content: 'Playfair Display', 'san serif';
+--ff-content:
+}
+html, body {
+height: 100%
+}
+/* #container {
+min-height: 100%;
+margin-bottom: -330px;
+position: relative;
+}
+#clearfooter {
+height: 330px;
+clear: both;
+}
+#footer {
+width: 100%;
+height: 150px;  
+position: fixed; 
+bottom: 0px; 
+left: 0px;
+} */
+.header {
+background-color: var(--col-blue);
+height: 200px;
+}
+.main {
+background-color: var(--col-brown);
+height: 80%;
+}
+.footer {
+background-color: var(--col-orange);
+height: 50px;
+}
+/* .footer1 {
+background-color: var(--col-orange);
+height: 100%;
+} */
+.spacer {
+padding-top: 2%;
+}
+.custom-nav {
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+/* --bs-nav-link-font-weight: ; 
+--bs-nav-link-color: var(--bs-link-color);
+--bs-nav-link-hover-color: var(--bs-link-hover-color);
+--bs-nav-link-disabled-color: #6c757d; */
+display: flex;
+flex-wrap: wrap;
+padding-left: 0;
+margin-bottom: 0;
+margin-top: -15px;
+margin-left: 30%;
+margin-right: auto;
+list-style: none;
+/* border-bottom: solid var(--col-d-brown) 1px; */
+}
+/* .custom-nav:active {
+color: var(--col-blue);
+background-color: var(--col-d-brown);
+} */
+.custom-nav-link {
+transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+text-decoration: none;
+display: block;
+font-family: var(--ff-content);
+color: var(--col-d-brown);
+padding: 0.5rem 1rem;
+font-size: 20px;
+}
+.custom-nav-tabs {
+margin-bottom: calc(-1 * 1px);
+background: 0 0;
+border: 1px solid transparent;
+border-top-left-radius: 0.375rem;
+border-top-right-radius: 0.375rem
+}
+.custom-tabs {
+border-width: 1px;
+border-color: #dee2e6;
+border-radius: 0.375rem;
+  /* --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
+  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-bg: #fff;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff; */
+/* border-bottom: 1px solid var(--col-d-brown); */
+}
+/* .custom-nav-tabs .custom-nav-link:focus, .custom-nav-tabs .custom-nav-link:hover {
+isolation: isolate;
+border-color: var(--col-d-brown);
+}  */
+.custom-nav-link:focus, .custom-nav-link:hover, .custom-nav-tabs:hover{
+isolation: isolate;
+border: var(--col-d-brown) solid 1px;
+border-top-left-radius: 0.375rem;
+border-top-right-radius: 0.375rem
+} 
+.custom-nav-link:active {
+color: var(--col-blue);
+background-color: var(--col-d-brown);
+border-color: var(--col-d-brown) solid 1px;
+}
+.custom-container {
+background-color: var(--col-brown);
+}
+.custom-wrap {
+background-color: var(--col-blue);
+padding: 5px;
+border-radius: 7px;
+margin: 8px;
+}
+.custom-card {
+background-color: var(--col-l-tan);
+padding: 7px;
+border: solid var(--col-orange) 5px;
+border-radius: 7px;
+font-family: var(--ff-soft-content);
+}
+.proj-card{
+display: flex;
+align-items: stretch;
+max-height: 100%
+}
+.proj-img {
+
+}
+.about-img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+#custom-btn {
+background-color: var(--col-orange);
+border: var(--col-orange) solid 3px;
+border-radius: 7px;
+margin-top: 15px;
+margin-bottom: 10px;
+color: var(--col-brown);
+}
+#custom-btn:hover {
+border: var(--col-brown) solid 3px;
+}
+.header h1 {
+font-family: var(--ff-header);
+color: var(--col-brown);
+font-size: 60px;
+}
+.header h4 {
+font-family: var(--ff-sub);
+color: var(--col-orange);
+font-size: 61px;
+margin-top: -29px;
+}
+.proj {
+text-decoration: none;
+color: var(--col-d-brown);
+font-size: 20px;
+}
+.projLink {
+text-decoration: none;
+color: var(--col-l-brown);
+text-align: end;
+}
