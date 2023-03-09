@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/professional-portfolio/static/css/main.fdab2283.css",
+    "main.js": "/professional-portfolio/static/js/main.aa7cbfa3.js",
+    "static/media/Resume.pdf": "/professional-portfolio/static/media/Resume.8898f3553ba913168938.pdf",
+    "index.html": "/professional-portfolio/index.html",
+    "main.fdab2283.css.map": "/professional-portfolio/static/css/main.fdab2283.css.map",
+    "main.aa7cbfa3.js.map": "/professional-portfolio/static/js/main.aa7cbfa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdab2283.css",
+    "static/js/main.aa7cbfa3.js"
+  ]
+}
