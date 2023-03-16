@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Text, HStack, SimpleGrid, Image } from '@chakra-ui/react';
+import { Box, Text, Stack, HStack, VStack, SimpleGrid, Image, Button, Spacer, Flex } from '@chakra-ui/react';
+import AfterAftersCar from '../../utils/carousel';
 
 const imgs = [{
     name: 'noteTaker',
@@ -47,6 +48,52 @@ const Portfolio = () => {
 
     return (
     <Box as="main" padding="1rem" backgroundColor={'browns.500'}>
+      <Box bg={'browns.400'} p={3} borderRadius={6}>
+        <Flex bg={'browns.300'} p={3} borderRadius={6} direction={['column', 'column', 'column', 'row']} gap={5} justifyItems={'center'}>
+            <AfterAftersCar justifySelf={'center'} />
+            <Spacer />
+            <VStack alignSelf={'center'} gap={5} w={'50%'}>
+              <Text
+                alignSelf={'center'}
+                textAlign={'even'}
+                fontFamily={'h4'}
+                color={'creams.100'}
+                bg={'browns.200'}
+                border={'solid'}
+                borderColor={'browns.200'}
+                borderWidth={8}
+                borderRadius={6}
+                // align={'center'}
+                >Frontend Philly-centric entertainment app that connects users to upcoming events with the ability to save favorites and see food options nearby the events venue</Text>
+              <Spacer />
+               <HStack>
+                <Button 
+                  as={'a'}
+                  href={'https://chelsrunnn.github.io/after-afters/'}
+                  target={'_blank'}
+                  rel={'noreferrer'}
+                  fontFamily={'h1'}
+                  color={'creams.100'} 
+                  bg={'browns.200'}
+                  _hover={{ bg:'browns.100', color:'creams.100'}}
+                  _active={{ bg:'browns.100', color:'creams.100'}}>Live Link</Button>
+                <Button 
+                  as={'a'}
+                  href={'https://github.com/ChelsRunnn/after-afters'}
+                  target={'_blank'}
+                  rel={'noreferrer'}
+                  fontFamily={'h1'}
+                  color={'creams.100'} 
+                  variant='outline' 
+                  border={'solid'}
+                  borderColor={'browns.200'}
+                  borderWidth={3}
+                  _hover={{ borderColor:'browns.100', color:'creams.100'}}
+                  _active={{ borderColor:'browns.100', color:'creams.100'}}>GitHub</Button>
+              </HStack>
+            </VStack>
+        </Flex>
+      </Box>
      <HStack>
        <Text
         fontFamily='h3'
